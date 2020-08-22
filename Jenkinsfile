@@ -1,15 +1,12 @@
 pipeline {
     agent any
+    environment {
+        NAME = 'AJAY'
+        LASTNAME = 'GURUGUBILLI'
+    }
     stages {
-        stage('deploy') {
-            steps {
-                retry(3) {
-                    echo "hello"
-                }
-                timeout(time: 3, unit:'SECONDS') {
-                    sh 'sleep 5'
-                }
-            }
+        stage ('BUILD') {
+            sh 'echo $NAME $LASTNAME'
         }
     }
 }
