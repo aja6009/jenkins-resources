@@ -5,7 +5,7 @@ pipeline {
         LASTNAME = 'GURUGUBILLI'
     }
     stages {
-        stage ('BUILD') {
+        stage('BUILD') {
             sh 'echo $NAME $LASTNAME'
         }
     }
