@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage ('BUILD') {
             steps {
-                echo 'HEllO world'
+                sh 'echo "My first pipeline"'
+                    echo "by this i can may usefull thinges"
+                    ls -ltr
             }
         }
     }
