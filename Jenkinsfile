@@ -1,5 +1,5 @@
 pipeline {
-    agent any {
+    agent any 
         stages {
             stage('Dploy') {
                 steps {
@@ -11,5 +11,4 @@ pipeline {
                     }
                 }
             }
-        }
-    }
+       }
