@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage ('BUILD') {
+        stage ('timeout') {
             steps {
-                sh 'echo "My first pipeline"'
-                sh "echo the box"
-                sh 'ls -ltr'
+                retry(2) {
+                    sh 'i was in box of art'
+                }
             }
         }
     }
