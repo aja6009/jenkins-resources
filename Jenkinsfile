@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'echo "My first pipeline"'
                 sh "echo the box"
-                sh ls -ltr
+                sh 'ls -ltr'
             }
         }
     }
